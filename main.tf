@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "myec" {
   ami           = "ami-01aab85a5e4a5a0fe"
-  instance_type = variable.instance_type
+  instance_type = var.instance_type
   key_name      = "nimesh1"
 
   provisioner "local-exec" {
