@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-east-2"
+}
+
 resource "aws_instance" "myec" {
   ami           = "ami-01aab85a5e4a5a0fe"
   instance_type = variable.instance_type
